@@ -1,14 +1,8 @@
-
 .backimage{
   background-image: url("backgimg1.png");
   opacity:1;
   min-width: 800px;
 }
-
-html{
-  scroll-behavior: smooth;
-}
-
 #trapezoid {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -171,7 +165,8 @@ html{
         border-radius: 15px;
         padding:15px;
         background-image:linear-gradient( #789F35 , #074d2c);
-        
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        animation-duration: 2s;
       }
 
       .footer{
@@ -230,9 +225,17 @@ background-image:linear-gradient( #789F35 , #226666);
 border:0.1px solid black;
 border-radius: 15px;
 width:70%;
-animation: mymove 5s infinite;
-animation-timing-function: ease-in;
+animation: 1s ease-out 0s 1 slideInFromLeft;
+animation-duration: 2s;
+}
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .instruct h1{ 
@@ -312,9 +315,14 @@ td{
   border:0.1px solid black;
   border-radius: 15px;
   width:70%;
-  animation: mymove 5s infinite;
-  animation-timing-function: ease-in;
-  }
+  animation-name: learn;
+ animation-duration: 6s;}
+
+ @keyframes learn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+ }
+ 
 
 .lead h1 { color: #CEF0D4; 
   font-family: 'Rouge Script', cursive; 
