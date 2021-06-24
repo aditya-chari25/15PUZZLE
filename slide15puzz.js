@@ -90,7 +90,7 @@ function swapTiles(cell1,cell2) {
   cell2.innerHTML = localStorage.getItem("count_"+i);
   cell3.innerHTML = localStorage.getItem("time_"+i);
   }
-  alert("SCROLL DOWN TO SEE THE LEADERBOARD \n IF YOU WANT TO SEE THE BOARD AFTER ANOTHER TRY REFRESH THE PAGE AFTER THE TRY");
+  alert("IF YOU WANT TO SEE THE BOARD AFTER ANOTHER TRY REFRESH THE PAGE AFTER THE TRY");
   document.getElementById("score2").disabled = true;
 
 
