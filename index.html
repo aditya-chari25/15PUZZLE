@@ -8,6 +8,7 @@
 </head>
 <body onload="myfunction();">
   <script src = "slide15puzz.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <div class = "backimage">
    <nav class="navbar">
       <div id="trapezoid">
@@ -58,10 +59,31 @@
   <span style="text-align:center;font-size:20px;color:#D4EE9F;font-weight:bold;margin: auto 0;">Time:</span><span id="hour">00</span><span>:</span><span id="min">00</span> <span>:</span><span id="sec">00</span><span>:</span><span id="milisec">00</span></p>
 <p id = "score1" style="text-align:center;font-size:20px;color:#D4EE9F;font-weight:bold;margin: auto 0;">Leaderboard: least moves = </p>
 <div class= "bdes">
-<button id="score2" href="#img" onClick ="lead();">Leaderboard</button> </div>
+<button id="score2" onClick ="lead();">Leaderboard</button> </div>
+
+
+
 </div>
 </div>
 </div></center>
+
+<center><div class = "lead" id = "img" style="display:none;margin-top:5px;">
+  <center><h1>SCORES OF OTHERS:-</h1></center>
+  <div class = "start"  style=margin-top:1px;"> 
+    <table class = "styled-table" id="myTable">
+      <thead>
+        <tr>
+          <th>NAME:</th>
+          <th>MOVES:</th>
+          <th>TIME:</th>
+        </tr>
+      </thead>
+      </table>
+</div>
+  
+</div>
+</center>
+  
 
 
 <div id = "howtoplay"></div>
@@ -69,23 +91,10 @@
 <h1>HOW TO PLAY</h1>
 <p>The 15-puzzle consists of a 4-by-4 grid with tile numbered  1 to 15 placed in the grid. The object of this puzzle is to randomly arrange the tiles on the grid, and then by sliding tiles around one tries to return all tiles to their home positions.</p>
 
-</div>   </center>        
+</div>   </center>       
 
 
-<center><div class = "lead" id="img" style="display: none;margin-top: 5px;">
-  <center><h1>SCORES OF OTHERS:-</h1></center>
-  <div class = "start"  style=margin-top:1px;"> 
-      <table class = "styled-table" id="myTable">
-        <thead>
-          <tr>
-            <th>NAME:</th>
-            <th>MOVES:</th>
-            <th>TIME:</th>
-          </tr>
-        </thead>
-  </div>
-</div>
-</center>
+
 </div>
 
 
