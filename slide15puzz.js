@@ -75,6 +75,9 @@ function swapTiles(cell1,cell2) {
   }
 
   function lead(){
+      
+  document.getElementById("img").style.display="block";
+      
   for(var i=1;i<=localStorage.clickcount;i++)
   {
   document.getElementById("img").style.display="block";
